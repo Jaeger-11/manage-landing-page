@@ -20,6 +20,9 @@ module.exports = {
         VeryLightGray: 'hsl(0, 0%, 98%)',
       }
     },
+    fontFamily: {
+      'serif': ['Be Vietnam Pro', 'sans-serif']
+    },
   },
   plugins: [],
 }
