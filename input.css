@@ -3,10 +3,33 @@
 @tailwind utilities;
 
 
-
 body{
-    background-image: url("../images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position: 90% -25%;
+    background-image: url("../images/bg-tablet-pattern.svg"),url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position: 110% -20%, -50% 60%;
+}
+
+.simplify{
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-position:40% 80%;
+}
+
+@media screen and (max-width: 980px)  {
+    body{
+        background-size: 700px;
+        background-position: 120% -10%, -50% 50%;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    body{
+        background-size: 500px, 350px;
+        background-position: -30% -5%, 250px 17%;
+    }
+    .simplify{
+        background-image: url("../images/bg-simplify-section-mobile.svg");
+        background-position: left 100%;
+        background-repeat: no-repeat;
+    }
 }

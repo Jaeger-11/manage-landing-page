@@ -649,8 +649,8 @@ video {
   height: 0px;
 }
 
-.w-8 {
-  width: 2rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-16 {
@@ -665,18 +665,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-md {
@@ -713,10 +701,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-6 {
@@ -824,9 +808,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pt-2 {
@@ -907,9 +891,36 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hamburger{
-  width: 24px;
-  height: 24px;
+body{
+  background-image: url("../images/bg-tablet-pattern.svg"),url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%;
+  background-position: 110% -20%, -50% 60%;
+}
+
+.simplify{
+  background-image: url("../images/bg-simplify-section-desktop.svg");
+  background-position:40% 80%;
+}
+
+@media screen and (max-width: 980px)  {
+  body{
+    background-size: 700px;
+    background-position: 120% -10%, -50% 50%;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  body{
+    background-size: 500px, 350px;
+    background-position: -30% -5%, 250px 17%;
+  }
+
+  .simplify{
+    background-image: url("../images/bg-simplify-section-mobile.svg");
+    background-position: left 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .placeholder\:text-sm::-moz-placeholder {
